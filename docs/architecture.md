@@ -12,7 +12,7 @@ It:
 + Listens for network events
 + Processes transactions both before and after they are validated
 
-## Core Components
+## ⚙️ Core Components
 
 `Node.ts`
 
@@ -54,7 +54,7 @@ It:
 + Sorts offers by quality
 + Adds and deletes offers
 
-## ⚙️ Utilities
+## 🛠️ Utilities
 
 `Manager.ts`
 
@@ -79,7 +79,7 @@ It:
 + Stores and overwrites elements
 + Provides access to the oldest elements
 
-## External Integration
+## 🔌 External Integration
 
 `DiscordBot.ts`
 
