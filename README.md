@@ -13,35 +13,33 @@ This enables optimal trading performance on the XRP Ledger, providing liquidity,
 
 ## Installation
 
-1. Clone the repository:
+1. Install your private `rippled` server:
+[Rippled Installation Guide](https://xrpl.org/docs/infrastructure/installation)
+
+2. Clone the repository:
 ```sh
 git clone https://github.com/adrienbailliard/xrpl-trading-bot.git
 ```
 
-2. Navigate to the project folder:
+3. Navigate to the project folder:
 ```sh
 cd xrpl-trading-bot
 ```
 
-3. Install dependencies:
+4. Install dependencies:
 ```sh
 npm i
 ```
 
-4. Compile TypeScript:
+5. Compile TypeScript:
 ```sh
 npx tsc
 ```
 
 ## Configuration
 
-Before running the script, you can customize its behavior by modifying the `config.json` file:
-+ `interval` - number of days for fetching trading data.
-+ `maxResults` - maximum number of trading pairs to display.
-+ `minExchanges` - minimum number of exchanges required.
-+ `minUniqueBuyersAndSellers` - minimum number of unique buyers and sellers required.
-
-Modify these **integer** values to filter and refine the results based on your preferences.
+Before running the bot, you must customize its behavior by modifying the `config.json` file.
+For a full explanation of all parameters, see the [Configuration Guide](docs/config.md).
 
 ## 💻 Usage
 
@@ -49,3 +47,9 @@ To run the project, use:
 ```sh
 node dist/index
 ```
+
+## Documentation
+
++ **How It Works** - [docs/architecture.md](docs/how-it-works.md).
++ **Project Architecture** - [docs/architecture.md](docs/architecture.md).
++ **Configuration Guide** - [docs/config.md](docs/config.md).
