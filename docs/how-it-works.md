@@ -6,20 +6,20 @@ The XRPL Trading Bot is designed to make intelligent market-making decisions on 
 
 1. **Initialization**
   
-   The bot loads the configuration from `config.json`, and prepares to interact with the XRP Ledger and Discord.
+   The bot loads the configuration from `config.json` and prepares to interact with both the XRP Ledger and Discord.
 
 2. **Connecting to the XRP Ledger**
 
-   The bot establishes a connection to the XRP Ledger and subscribes to relevant streams, monitoring the synchronization of the server.
+   The bot establishes a connection to the XRP Ledger, subscribes to relevant data streams, and monitors the server's synchronization status.
 
-3. **Once the server is synchronised**
+3. **Synchronization Established**
 
-   The bot sets up the issuers, wallets, and market configurations based on the provided settings. The trading process begins.
+   Once synchronization is achieved, the bot configures issuers, wallets, and market settings based on the provided configuration, and begins the trading process.
 
 4. **Monitor and Process Transactions**
 
-   The bot continuously listens for incoming transactions. It updates its internal data, allowing it to adjust market positions dynamically.
+   The bot continuously listens for incoming transactions, updating its internal data to dynamically adjust market positions.
 
 5. **Sync Loss Recovery**
 
-   In case of a loss of synchronization, the bot resets and starts the process over, ensuring reconnection to the network.
+   In case of a synchronization loss, the bot resets and returns to step 3 to resume normal operation.
