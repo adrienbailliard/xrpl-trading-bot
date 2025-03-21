@@ -1,6 +1,6 @@
 # How It Works
 
-The XRPL Trading Bot is designed to make intelligent market-making decisions on the XRP Ledger, while keeping users informed of its activities via Discord. It efficiently manages wallets, processes market data in real time, and executes transactions through continuous communication with the network.
+The XRPL Trading Bot is designed to make intelligent market-making decisions on the XRP Ledger, while keeping users informed of its activities via Discord.
 
 ## 🔄 Workflow
 
