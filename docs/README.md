@@ -4,7 +4,7 @@ Welcome to the documentation for the XRPL Trading Bot.
 
 ## Contents
 
-- **[How It Works](how-it-works.md)** - overview of how the bot operates.  
+- [How It Works](how-it-works.md) - overview of how the bot operates.  
 - **[Project Architecture](architecture.md)** - explanation of the roles of the different classes.  
 - **[Configuration Guide](config.md)** - details on `config.json` parameters and their effects.
 
