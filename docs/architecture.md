@@ -22,8 +22,6 @@ It:
 + Subscribes to relevant streams
 + Monitors the server synchronization
 
-
-
 `Wallet.ts`
 
 This class represents a wallet.
