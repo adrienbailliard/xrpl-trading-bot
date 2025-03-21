@@ -14,7 +14,7 @@ This enables optimal trading performance on the XRP Ledger, providing liquidity,
 ## Installation
 
 1. Install and run your private `rippled` server:
-[Rippled Installation Guide](https://xrpl.org/docs/infrastructure/installation)
+[Rippled Installation Guide](https://xrpl.org/docs/infrastructure/installation).
 
 2. Clone the repository:
 ```sh
