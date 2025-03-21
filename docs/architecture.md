@@ -1,6 +1,6 @@
 # 📂 Project Architecture
 
-This document explains the roles of the different classes in the XRPL Trading Bot.
+This document describes the roles of the different classes in the XRPL Trading Bot, giving a clear overview of each component.
 
 ## Entry Point
 
@@ -10,30 +10,29 @@ This is the entry point of the XRPL Trading Bot.
 It:
 + Initializes all core components
 + Listens for network events
-+ Processes transactions both before and after they are validated
++ Processes transactions before and after validation
 
 ## ⚙️ Core Components
 
 `Node.ts`
 
-This class manages the connection.
+This class manages the connection to the XRP Ledger.
 It:
 + Communicates with the XRP Ledger
 + Subscribes to relevant streams
-+ Monitors the server synchronization
++ Monitors server synchronization
 
 `Wallet.ts`
 
-This class represents a wallet.
+This class represents an individual wallet.
 It:
-+ Retrieve wallet information
++ Retrieves wallet information
 + Monitors and updates balances
-+ Manages offers
-+ Executes trades
++ Manages offers and executes trades
 
 `Market.ts`
 
-This class represents a market.
+This class represents a trading market.
 It:
 + Calculates and updates key market data
 + Tracks XRP Ledger wallet balances
@@ -85,6 +84,6 @@ It:
 
 This class manages a Discord bot.
 It:
-+ Processes interactions
++ Processes user interactions
 + Protects and monitors specific channels
 + Logs messages
