@@ -39,6 +39,7 @@ npx tsc
 ## Configuration
 
 Before running the bot, you must customize its behavior by modifying the `config.json` file.
+
 For a full explanation of all parameters, see the [Configuration Guide](docs/config.md).
 
 ## 💻 Usage
