@@ -23,6 +23,7 @@ It:
 + Monitors the server synchronization
 
 
+
 `Wallet.ts`
 
 This class represents a wallet.
