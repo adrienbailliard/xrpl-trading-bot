@@ -9,7 +9,7 @@ This document describes the roles of the different classes in the XRPL Trading B
 This is the entry point of the XRPL Trading Bot.
 It:
 + Initializes all core components
-+ Listens for network events
++ Listens for server synchronization
 + Processes transactions before and after validation
 
 ## ⚙️ Core Components
