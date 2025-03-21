@@ -51,6 +51,8 @@ node dist/index
 
 ## 📜 Documentation
 
-+ **How It Works** - [docs/how-it-works.md](docs/how-it-works.md).
-+ **Project Architecture** - [docs/architecture.md](docs/architecture.md).
-+ **Configuration Guide** - [docs/config.md](docs/config.md).
++ [How It Works](docs/how-it-works.md) - Overview of how the bot operates.  
++ [Project Architecture](docs/architecture.md) - Explanation of the roles of the different classes.  
++ [Configuration Guide](docs/config.md) - Details on `config.json` parameters.
+
+Refer to these documents to understand the project and configure it according to your needs.
