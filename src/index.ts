@@ -19,8 +19,8 @@ const config = createRequire(import.meta.url)("../config.json");
 async function main(): Promise<void>
 {
 	process.stdout.write('\x1B[2J\x1B[3J\x1B[H');
-	process.stdout.write('\x1b]0;Ravager\x07');
-	console.log("Ravager, by Adrien Bailliard\nOne of the best XRPL trading bots\n");
+	process.stdout.write('\x1b]0;XRPL Trading Bot\x07');
+	console.log("A powerful market maker bot for the XRP Ledger DEX,\nby Adrien Bailliard\n");
 
 
 	await DiscordBot.init();
