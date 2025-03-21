@@ -54,7 +54,7 @@ It:
 + Sorts offers by quality
 + Adds and deletes offers
 
-## Utilities
+## ⚙️ Utilities
 
 `Manager.ts`
 
