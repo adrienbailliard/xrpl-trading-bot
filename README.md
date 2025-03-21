@@ -1,27 +1,26 @@
-# XRPL Ticker Lister
+# XRPL Trading Bot
 
-A simple ticker lister for the XRP Ledger.
+A powerful market maker bot for the XRP Ledger DEX.
 
 ## What You Get
 
-When you run this script, it will generate and display the **top trading pairs** on the XRP Ledger, including: 
-+ Volume (in XRP)
-+ Number of exchanges
-+ Unique buyers and sellers
-+ Direct marketplace link
+When you run this bot, you will get: 
++ **Automated Trading** - buy and sell offers are automatically placed.
++ **High Performance** - optimized for speed, anticipating offers before validation.
++ **Discord Integration** - easily monitor the bot’s activity and performance.
 
-This allows you to quickly see the most active markets on the XRPL.
+This enables optimal trading performance on the XRP Ledger, providing liquidity, and maximizing trading opportunities.
 
 ## Installation
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/adrienbailliard/xrpl-ticker-lister.git
+git clone https://github.com/adrienbailliard/xrpl-trading-bot.git
 ```
 
 2. Navigate to the project folder:
 ```sh
-cd xrpl-ticker-lister
+cd xrpl-trading-bot
 ```
 
 3. Install dependencies:
