@@ -49,8 +49,8 @@ To run the project, use:
 node dist/index
 ```
 
-## Documentation
+## 📜 Documentation
 
-+ **How It Works** - [docs/architecture.md](docs/how-it-works.md).
++ **How It Works** - [docs/how-it-works.md](docs/how-it-works.md).
 + **Project Architecture** - [docs/architecture.md](docs/architecture.md).
 + **Configuration Guide** - [docs/config.md](docs/config.md).
