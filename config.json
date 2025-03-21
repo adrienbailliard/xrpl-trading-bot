@@ -1,0 +1,42 @@
+{
+	"displayNDigits": 4,
+	"ignoredFundsToBalanceRatio": 0.1,
+	"baseProfitSpread": 0.001,
+	"benchmarkAveragingPeriod": 8,
+	"spreadAverageRatio": {
+		"minSpread": 0.65,
+		"tradeTrigger": 0.2,
+		"tinyOffersTolerance": 0.05
+	},
+	"discord": {
+		"monitoringChannel": "General",
+		"token": "your-Discord-bot-token",
+		"confirmationColor": "#2869C6",
+		"errorColor": "#b30303"
+	},
+	"reserveAddress": "rYourWalletAdress",
+	"wallets":
+	{
+		"sYourWalletSeed": {
+			"base": {
+				"currency": "41524D5900000000000000000000000000000000",
+				"issuer": "rGG3wQ4kUzd7Jnmk1n5NWPZjjut62kCBfC"
+			},
+			"quote": {
+				"currency": "XRP"
+			},
+			"exposureLimit": 400
+		},
+
+		"sYourWalletSeed": {
+			"base": {
+				"currency": "BTC",
+				"issuer": "rchGBxcD1A1C2tdxF6papQYZ8kjRKMYcL"
+			},
+			"quote": {
+				"currency": "XRP"
+			},
+			"exposureLimit": 400
+		}
+	}
+}
