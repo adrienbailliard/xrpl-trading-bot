@@ -5,9 +5,9 @@ A powerful market maker bot for the XRP Ledger DEX.
 ## What You Get
 
 When you run this bot, you will get: 
-+ **Automated Trading** - buy and sell offers are automatically placed.
-+ **High Performance** - optimized for speed, anticipating offers before validation.
-+ **Discord Integration** - easily monitor the bot’s activity and performance.
++ **Automated Trading** - Buy and sell offers are automatically placed.
++ **High Performance** - Optimized for speed, anticipating offers before validation.
++ **Discord Integration** - Easily monitor the bot’s activity and performance.
 
 This enables optimal trading performance on the XRP Ledger, providing liquidity, and maximizing trading opportunities.
 
