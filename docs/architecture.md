@@ -79,7 +79,7 @@ It:
 + Stores and overwrites elements
 + Provides access to the oldest elements
 
-## 🔌 External Integration
+## External Integration
 
 `DiscordBot.ts`
 
