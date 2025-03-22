@@ -30,7 +30,7 @@ This document explains the settings available in the `config.json` file and how 
    Spread percentage that triggers trade execution.
 + `smallOffersTolerance` (number)
 
-  Tolerance percentage for small offers that would normally be ignored.
+  Spread tolerance percentage for small offers that would normally be ignored.
 
 ## Discord Integration (`discord`)
 
