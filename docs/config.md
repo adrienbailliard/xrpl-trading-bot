@@ -32,7 +32,7 @@ This document explains the settings available in the `config.json` file and how 
 
   Tolerance for small offers that would normally be ignored.
 
-## 🤖 Discord Integration (`discord`)
+## Discord Integration (`discord`)
 
 + `monitoringChannel` (string)
 
