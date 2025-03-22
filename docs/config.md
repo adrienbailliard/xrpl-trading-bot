@@ -39,10 +39,25 @@ This document explains the settings available in the `config.json` file and how 
   Name of the Discord channel where the bot sends synchronization status updates.
 + `token` (string)
 
-  Your Discord bot token. For more information, visit [Discord OAuth2 Documentation](https://discord.com/developers/docs/topics/oauth2).
+  Your Discord bot token. For more information, see [Discord OAuth2 Documentation](https://discord.com/developers/docs/topics/oauth2).
 + `confirmationColor` (string)
 
   Hexadecimal color used for confirmation messages.
 + `errorColor` (string)
 
   Hexadecimal color used for error messages.
+
+## 💰 Wallet Configuration (`wallets`)
+
+Each wallet is identified by a secret seed and is associated with a specific market. You can add as many wallets as needed, each tied to a different market.
+
+They contain the following settings:
++ `base` (object)
+
+  Base currency in the XRP Ledger. For more information, see [XRP Ledger Currency Formats](https://xrpl.org/docs/references/protocol/data-types/currency-formats#specifying-without-amounts).
++ `quote` (object)
+
+  Quote currency in the XRP Ledger. For more information, see [XRP Ledger Currency Formats](https://xrpl.org/docs/references/protocol/data-types/currency-formats#specifying-without-amounts).
++ `exposureLimit` (number)
+
+  Maximum amount of the quote currency that can be used.
