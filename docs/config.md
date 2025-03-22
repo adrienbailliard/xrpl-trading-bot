@@ -7,9 +7,9 @@ This document explains the settings available in the `config.json` file and how 
 + `displayNDigits` (number)
   
   The number of decimal places used for displaying values.
-+ `ignoredSmallOffersBalanceRatio` (number)
++ `ignoreOfferAmountBalanceRatio` (number)
   
-  The percentage of balance to ignore small offers from competitors.
+  The percentage of the balance to ignore when considering offers.
 + `baseProfitSpread` (number)
   
   Minimum profit margin applied when placing offers.
@@ -19,3 +19,30 @@ This document explains the settings available in the `config.json` file and how 
 + `reserveAddress` (string)
   
   XRP Ledger address where excess tokens are sent.
+
+## Spread Management (`spreadAverageRatio`)
+
++ `minSpread` (number)
+
+  Minimum spread percentage required before the bot considers an offer.
++ `tradeTrigger` (number)
+
+   Spread percentage that triggers trade execution.
++ `smallOffersTolerance` (number)
+
+  Tolerance for small offers that would normally be ignored.
+
+## Discord Integration (`discord`)
+
++ `monitoringChannel` (string)
+
+  Name of the Discord channel where the bot sends synchronization status updates.
++ `token` (string)
+
+  Your Discord bot token. For more information, visit [Discord OAuth2 Documentation](https://discord.com/developers/docs/topics/oauth2).
++ `confirmationColor` (string)
+
+  Hexadecimal color used for confirmation messages.
++ `errorColor` (string)
+
+  Hexadecimal color used for error messages.
