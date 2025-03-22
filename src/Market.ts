@@ -184,7 +184,7 @@ export default class Market
 
 	setAmountToIgnore(side: MarketSide, balance: Record<string, number>): void
 	{
-		this.amountsToIgnore[side] = config.ignoredFundsToBalanceRatio * (balance[this.currencies[side].id] + balance[this.currencies[1 - side].id] * this.books[1 - side].getOffer(0)!.quality);
+		this.amountsToIgnore[side] = config.ignoreOfferAmountBalanceRatio * (balance[this.currencies[side].id] + balance[this.currencies[1 - side].id] * this.books[1 - side].getOffer(0)!.quality);
 	}
 
 
@@ -227,9 +227,9 @@ export default class Market
 		while (skipedAmount <= this.amountsToIgnore[side] || liquidOffers.length === 0);
 
 
-		// Tolerance for tiny offers
+		// Tolerance for small offers
 
-		const tolerance = 1 + this.secureSpread * config.spreadAverageRatio.tinyOffersTolerance;
+		const tolerance = 1 + this.secureSpread * config.spreadAverageRatio.smallOffersTolerance;
 		for (i = liquidOffers.length - 1; i > 0 && offer.quality / liquidOffers[i - 1].quality <= tolerance; i--);
 
 
