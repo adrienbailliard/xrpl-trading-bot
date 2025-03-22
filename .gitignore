@@ -4,3 +4,6 @@ dist/
 # Node
 node_modules/
 package-lock.json
+
+# Sensitive config files
+config.json
