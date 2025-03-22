@@ -6,16 +6,16 @@ This document explains the settings available in the `config.json` file and how 
 
 + `displayNDigits` (number)
   
-  The number of decimal places used for displaying values.
+  Number of decimal places used for displaying values.
 + `ignoreOfferAmountBalanceRatio` (number)
   
-  The percentage of the balance to ignore when considering offers.
+  Percentage of the balance to ignore when considering offers.
 + `baseProfitSpread` (number)
   
   Minimum profit margin percentage applied when placing offers.
 + `benchmarkAveragingPeriod` (number)
   
-  The number of minutes over which the benchmark price is averaged.
+  Number of minutes over which the benchmark price is averaged.
 + `reserveAddress` (string)
   
   XRP Ledger address where excess tokens are sent.
