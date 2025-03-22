@@ -75,7 +75,7 @@ function formatAmount(marketCurrency: MarketCurrency, value: number): Amount
 
 function proccessRippleState(rippleState: LedgerEntry.RippleState): RippleStateProcessed
 {
-	if (!rippleState.HighNode || rippleState.HighNode == "0")
+	if (rippleState.LowNode !== "0")
 	{
 		return {
 			Account: rippleState.HighLimit.issuer,
