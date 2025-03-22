@@ -12,7 +12,7 @@ This document explains the settings available in the `config.json` file and how 
   The percentage of the balance to ignore when considering offers.
 + `baseProfitSpread` (number)
   
-  Minimum profit margin applied when placing offers.
+  Minimum profit margin percentage applied when placing offers.
 + `benchmarkAveragingPeriod` (number)
   
   The number of minutes over which the benchmark price is averaged.
@@ -30,7 +30,7 @@ This document explains the settings available in the `config.json` file and how 
    Spread percentage that triggers trade execution.
 + `smallOffersTolerance` (number)
 
-  Tolerance for small offers that would normally be ignored.
+  Tolerance percentage for small offers that would normally be ignored.
 
 ## Discord Integration (`discord`)
 
