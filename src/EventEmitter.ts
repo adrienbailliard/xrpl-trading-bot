@@ -22,7 +22,7 @@ export default class EventEmitter<Events extends Record<string, (...args: any[])
 	}
 
 
-	emit<T extends keyof Events>(eventType: T, ...args: Parameters<Events[T]>): void
+	protected emit<T extends keyof Events>(eventType: T, ...args: Parameters<Events[T]>): void
 	{
 		this.eventCallbacks[eventType]?.forEach(async (callback) =>
 		{
