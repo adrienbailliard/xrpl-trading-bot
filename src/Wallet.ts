@@ -1,4 +1,4 @@
-import { Wallet as XRPLWallet, Currency, SubmitResponse, Transaction, AccountOffer, Amount, Payment,
+import { Wallet as XRPLWallet, Currency, SubmitResponse, Transaction, Amount, Payment,
 	PaymentFlags, OfferCreate, LedgerEntry, OfferCreateFlags, TransactionStream } from "xrpl";
 
 import { getCurrencyId, log, displayAmount, getCurrencySymbol, formatAmount, getAmountValue } from "./utils.js";
@@ -155,27 +155,27 @@ export default class Wallet
 		await this.setTokensBalance();
 
 
-		const accountData = (await Node.request({
-			"command": "account_info",
-  			"account": this.keys.address
-		})).result.account_data;
+	  	const [ accountInfo, accountOffers ] = await Promise.all([
+	  		Node.request({
+				"command": "account_info",
+	  			"account": this.keys.address
+			}),
+	  		Node.request({
+		  		"command": "account_offers",
+		  		"account": this.keys.address
+		  	})
+	  	]);
 
 
-		const offers: Array<AccountOffer> = (await Node.request({
-	  		"command": "account_offers",
-	  		"account": this.keys.address
-	  	})).result.offers!;
-
-
-	  	this.sequence = accountData.Sequence;
+	  	this.sequence = accountInfo.result.account_data.Sequence;
 		this.lastPendingTxSequence = this.sequence - 1;
 
-		for (const offer of offers)
+		for (const offer of accountOffers.result.offers!)
 			this.cancelOffer(offer.seq, { gets: offer.taker_gets, pays: offer.taker_pays });
 
 
 		this.setReserve();
-		this.handleAccountBalance(accountData);
+		this.handleAccountBalance(accountInfo.result.account_data);
 
 		this.market.set(this.balance);
 	}
