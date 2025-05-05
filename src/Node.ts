@@ -8,7 +8,7 @@ import { NodeEvents } from "./types";
 export default class Node extends EventEmitter<NodeEvents>
 {
 	private static readonly client: Client = new Client("ws://localhost:6006/");
-	private static _lastLedgerClosed: LedgerStreamResponse;
+	private static _lastLedgerClosed: Readonly<LedgerStreamResponse>;
 
 
 
@@ -52,7 +52,7 @@ export default class Node extends EventEmitter<NodeEvents>
 
 
 
-	static get lastLedgerClosed(): LedgerStreamResponse
+	static get lastLedgerClosed(): Readonly<LedgerStreamResponse>
 	{
 		return Node._lastLedgerClosed;
 	}
